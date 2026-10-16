@@ -23,6 +23,8 @@ end
   resources :mypage, only: [:show] # ユーザ情報の詳細表示
   # 商品関連
   resources :products
+
+  resources :cart_items, only: [:create, :update, :destroy]  # 追加
   
   # get "products/new"
   # post 'products', to: 'products#create'  # 登録
